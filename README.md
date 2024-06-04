@@ -1,4 +1,4 @@
-# 🎮 My Game Portfolio 🎮
+# 🎮 Game Portfolio 🎮
 
 Welcome to my portfolio! Here are the games I've developed + relevant source code repositories. Click the links to play the games or view their code.
 
