@@ -83,6 +83,24 @@ section {
     padding-left: 1.5rem;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers video horizontally */
+    align-items: center; /* Centers video vertically */
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Matches your main content */
+    margin: auto; /* Centers within section */
+}
+
+.video-container video {
+    width: 100%; /* Makes video fill its container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 80vh; /* Prevents it from getting too tall */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+
 /* Footer */
 footer {
     text-align: center;
