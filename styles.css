@@ -44,6 +44,23 @@ section {
     margin: auto;
 }
 
+.header-links {
+    display: flex;
+    justify-content: space-between; /* Pushes h2 left, link right */
+    align-items: center; /* Aligns them vertically */
+    width: 100%;
+    max-width: 1000px; /* Adjust width if needed */
+    margin: auto; /* Centers the block */
+}
+
+.game-title {
+    margin: 0; /* Removes default margin to prevent spacing issues */
+}
+
+.game-link {
+    font-size: 1.2rem; /* Adjust size if needed */
+}
+
 .project {
     margin-bottom: 3rem;
     border-bottom: 1px solid #ccc;
