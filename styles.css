@@ -51,6 +51,7 @@ section {
     width: 100%;
     max-width: 1000px; /* Adjust width if needed */
     margin: auto; /* Centers the block */
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
 .game-title {
@@ -60,6 +61,22 @@ section {
 .game-link {
     font-size: 1.4rem; /* Adjust size if needed */
 }
+
+/* Responsive Fix: Stack elements on small screens */
+@media (max-width: 600px) {
+    .header-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game-title,
+    .game-link {
+        width: 100%; /* Make them full-width */
+        text-align: center; /* Center the text */
+        margin-bottom: 10px; /* Add spacing */
+    }
+}
+
 
 .project {
     margin-bottom: 3rem;
