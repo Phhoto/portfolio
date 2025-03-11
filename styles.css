@@ -156,9 +156,9 @@ a:hover {
 .play-link {
     color: #004225; 
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .play-link:hover {
     color: #0a5c38;
-    text-decoration: underline;
 }
