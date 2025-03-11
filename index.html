@@ -209,14 +209,14 @@ The generation process works by analysing the MP3 file for "note onsets" -the st
     </footer>
     
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('load', () => {
             const hash = window.location.hash;
             if (hash) {
                 const target = document.querySelector(hash);
                 if (target) {
                     setTimeout(() => {
                         target.scrollIntoView({ behavior: 'smooth' });
-                    }, 1000);
+                    }, 150);
                 }
             }
         });
