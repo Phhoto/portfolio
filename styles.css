@@ -86,6 +86,7 @@ section {
     margin-bottom: 3rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 1rem;
+    scroll-margin-top: 20px;
 }
 
 .project h2 {
