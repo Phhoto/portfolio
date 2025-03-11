@@ -58,7 +58,7 @@ section {
 }
 
 .game-link {
-    font-size: 1.2rem; /* Adjust size if needed */
+    font-size: 1.4rem; /* Adjust size if needed */
 }
 
 .project {
@@ -128,7 +128,7 @@ footer {
 }
 
 a {
-    color: #ffcc00;
+    color: #ebc11c;
     text-decoration: none;
 }
 
