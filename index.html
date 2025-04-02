@@ -117,6 +117,29 @@ The generation process works by analysing the MP3 file for "note onsets" -the st
             </div>
         </section>
 
+        <!-- Project 7 -->
+        <section id="dont-drop-alice" class="project">
+            <div class="header-links">
+                <h2 class="game-title">Don't Drop Alice</h2>
+                <span class="game-link">
+                    <em>[ <a href="https://willowflame.itch.io/dont-drop-alice" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
+                </span>
+            </div>
+            <p>
+                Group project made in Unity for <a href="https://itch.io/jam/mini-jam-180-refresh" target="_blank" class="play-link">Mini Jam 180</a>, for which the theme was ‘Refresh’ and the limitation was ‘Falling Down’. Pop-ups constantly appear, and the player must refresh the tab with Alice in before she falls out of it.
+            </p>
+            <div class="project-images">
+                <img src="dda1.gif" alt="Don't Drop Alice Tab Spawning">
+                <img src="dda2.gif" alt="Don't Drop Alice Alice Spawning">
+            </div>
+            <p>For this project I had no hand in art or concept, so could focus entirely on clean implementation and QOL improvements. I had fun coming up with creative implementations, for example each of the ‘2D’ popup needed to have clickable components (Close button, refresh button, title bar) that could not be clicked through other popups in front of them. My solution was to implement the popups as very thin 3D objects that each spawn minutely closer to the 2D camera, with a 3D collider for the main body and slightly extruded colliders for the clickable parts. This meant I could just 3D raycast from the cursor position into the screen to accurately return whatever the user clicked, and closer popups would physically block anything behind them from being hit. It was a great lesson in bringing 3D concepts into a 2D game, and I’m glad Unity makes this so easy to do!
+            </p>
+            <p>Ranked 20th out of 86 entries.</p>
+            <div class="links">
+                <p><em>[ <a href="https://willowflame.itch.io/dont-drop-alice" target="_blank">GAME PAGE</a> ] --- [ <a href="https://jodethreart.itch.io/" target="_blank">JODIE'S ITCH PAGE</a> ] --- [ <a href="https://willowflame.itch.io" target="_blank">WILLOW'S ITCH PAGE</a> ] --- [ <a href="https://bleiph.itch.io/" target="_blank">SONYA'S ITCH PAGE</a> ]</em></p>
+            </div>
+        </section>
+
         <!-- Project 6 -->
         <section id="press-play" class="project">
             <div class="header-links">
