@@ -167,3 +167,111 @@ a:hover {
 .play-link:hover {
     color: #00f589;
 }
+
+.intro {
+    background-color: #c8e6c9;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid {
+    background-color: #b8d6b9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.projects-grid-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card {
+    background-color: rgb(208, 235, 209);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #1a4516;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+.image-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-card {
+    background-color: #9fd692;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.image-card h3 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #b1d7a5;
+}
+
+.image-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.header-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+  color: #00f589;
+}

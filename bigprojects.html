@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <div class="header-links">
+            <a href="https://phhoto.itch.io/" target="_blank">itch.io</a>
+            <a href="index.html">HOME</a>
+            <a href="mailto:jcgroberts@gmail.com">email</a>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                if (window.location.hash) {
+                // Prevent browser from auto-jumping to the section
+                history.scrollRestoration = 'manual';
+                const target = document.querySelector(window.location.hash);
+                    if (target) {
+                        // Check if the section is larger than the viewport height
+                        const sectionHeight = target.getBoundingClientRect().height;
+                        const viewportHeight = window.innerHeight;
+        
+                        setTimeout(() => {
+                            if (sectionHeight < viewportHeight) {
+                                // Center it if smaller than the viewport
+                                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            } else {
+                                // Align to top if larger than the viewport
+                                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }, 550);
+                    }
+                }
+            });
+        </script>
+    </header>
+
+    <main>
+
+        <!-- Project 3 -->
+        <section id="autorhythm" class="project">
+            <div class="header-links">
+                <h2 class="game-title">AUTORHYTHM</h2>
+                <span class="game-link">
+                    <em>[ <a href="https://phhoto.itch.io/autorhythm" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
+                </span>
+            </div>
+            <p>
+                Made for my dissertation, AutoRhythm is a simple note-playing rhythm game in the style of DDR or Guitar Hero, in which the user can supply any song and have a level generated for it which they can then play.
+            </p>
+            <div class="project-images">
+                <img src="ar2.png" alt="AUTORHYTHM Screenshot">
+                <img src="ar4.png" alt="AUTORHYTHM Screenshot">
+            </div>
+            <p>
+                The game itself was made in Unity, with accompanying Python code to deal with level generation. The user supplies an MP3 to the relevant folder, and a level can be generated, played, and saved for future use.
+            </p>
+            <ul>
+                <li>Options to control level generation (difficulty, style, etc.)</li>
+                <li>Easy rebinding with support for most HIDs and MIDI instruments</li>
+                <li>Customizable number of note streams (1-6 input buttons)</li>
+                <li>Level editor to tweak scores as needed</li>
+            </ul>
+            <div class="project-images">
+                <img src="ar1.png" alt="AUTORHYTHM Screenshot">
+                <img src="ar3.png" alt="AUTORHYTHM Screenshot">
+            </div>
+            <p>
+                This project exceeded my expectations and often generates well-structured levels for songs not featured in any existing rhythm games.</p><p>
+The generation process works by analysing the MP3 file for "note onsets" -the starting points of notes within the track. Each onset is assigned a strength value which indicates the likelihood of a significant change in the audio signal, which is useful as it also essentially indicates how ‘obvious’ the note is. After experimenting with both quantization and ignoring weak onsets to filter out irregular notes, I implemented a system that calculates the mean and standard deviation of onset strengths within a given window around each onset. The game can then selectively include onsets based on their relative strength, filtering out comparatively weak notes in favour of strong, obvious ones, while also allowing weak notes to exist in sections of the track with no strong onsets.
+</p><p>This was a huge and satisfying development milestone. Suddenly, levels felt like they properly matched the songs, with minimal unwanted or random notes. While the project absolutely prioritizes functionality over visuals, it’s a good proof of concept and can work well as a tool in conjunction with rhythm game emulators that accept user-made scores. Countless areas for improvement but I think it's a fun and promising prototype, and I’ve learned a lot from it.
+
+            </p>
+            <div class="links">
+                <p><em>[ <a href="https://phhoto.itch.io/autorhythm" target="_blank">GAME PAGE</a> ] --- [ <a href="https://raw.githubusercontent.com/Phhoto/portfolio/main/project%20report%20jake%20roberts.pdf" target="_blank">PROJECT WRITEUP</a> ]</em></p>
+            </div>
+        </section>
+
+        <!-- Project 8 -->
+        <section id="3d" class="project">
+            <div class="header-links">
+                <h2 class="game-title">3D Prototype</h2>
+                <span class="game-link">
+                    <em>[ <a href="https://phhoto.itch.io/ossuery-demo?secret=bNR1gIjeqaIl7QnvMY2XdyrJgEQ" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
+                </span>
+            </div>
+            <p>
+                3D puzzle game prototype I made to improve my 3D skills.
+            </p>
+            <div class="project-images">
+                <img src="3dgif2.gif" alt="Gameplay Gif">
+                <img src="3dgif4.gif" alt="Gameplay GIF">
+            </div>
+            <p>
+                The player walks around the environment and can fast forward or rewind time to solve puzzles. For example, forwarding time can cause locks to break and trees to grow, while rewinding can cause infrastructure to rebuild and electronics to become powered, all of which can be used to enable progression through the facility.
+            </p>
+            <div class="project-images">
+                <img src="3dgif1.gif" alt="Gameplay GIF">
+                <img src="3dgif3.gif" alt="Gameplay GIF">
+            </div>
+            <p>This project is currently a sandbox that I use to test things out in Unity 3D (I've learnt plenty about particles, shaders, lighting, Blender/skinned mesh renderers and Cinemachine that my 2D work doesn't touch on), but I think the concept itself has legs and I'm excited to add more.</p>
+            
+            <div class="links">
+                <p><em>[ <a href="https://phhoto.itch.io/ossuery-demo?secret=bNR1gIjeqaIl7QnvMY2XdyrJgEQ" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/OssuaryScripts" target="_blank">CODE REPO</a> ]</em></p>
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section id="carpetman-listener" class="project">
+            <div class="header-links">
+                <h2 class="game-title">Carpetman Listener</h2>
+                <span class="game-link">
+                    <em>[ <a href="https://phhoto.itch.io/carpetman-listener" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
+                </span>
+            </div>
+            <p>
+                Building off of Caption Quest, this is a longer puzzle game following the same concept, made in PyGame and submitted to the Mental Health Game Dev Champions Jam on itch.io.
+            </p>
+            <div class="project-images">
+                <img src="cm1.png" alt="Carpetman Listener Screenshot">
+                <img src="cm2.png" alt="Carpetman Listener Screenshot">
+            </div>
+            <p>
+                I designed 24 levels with some new features, such as textboxes with non-walkable borders, beam-activated switches, and eventually the ability to talk yourself. Many levels focus on playing around with the core mechanics in different ways.
+            </p>
+            <div class="project-images">
+                <img src="cm3.png" alt="Carpetman Listener Screenshot">
+                <img src="cm4.png" alt="Carpetman Listener Screenshot">
+            </div>
+            <p>
+                I'm proud of the work I put into this game, it was nice to build something from the ground up, refine my level design skills and have time to write significantly cleaner code than in Caption Quest. The design approach focused on pushing core concepts to their limits, and ultimately this led to a few quite confusing yet similar puzzles. I’ve learned that balancing complexity with accessibility is key to maintaining engagement. In hindsight, taking the design approach the other way with a faster introduction of new mechanics and simpler puzzles—something Caption Quest did well—could have enhanced the overall player experience. This project has been a great lesson in striking that balance, and I’m excited to apply these insights to future designs.
+            </p>
+            <div class="links">
+                <p><em>[ <a href="https://phhoto.itch.io/carpetman-listener" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/Carpetman-Listener" target="_blank">CODE REPO</a> ]</em></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Jake Roberts</p>
+        <p><a href="mailto:jcgroberts@gmail.com">jcgroberts@gmail.com</a></p>
+        <p><a href="https://phhoto.itch.io/" target="_blank">itch.io page</a></p>
+    </footer>
+
+</body>
+</html>

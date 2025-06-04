@@ -9,7 +9,11 @@
 <body>
     <header>
         <h1>My Projects</h1>
-        <p><pre><a href="mailto:jcgroberts@gmail.com">jcgroberts@gmail.com</a>&#9;&#9;<a href="https://phhoto.itch.io/" target="_blank">itch.io page</a></pre></p>
+        <div class="header-links">
+            <a href="https://phhoto.itch.io/" target="_blank">itch.io</a>
+            <a href="index.html">HOME</a>
+            <a href="mailto:jcgroberts@gmail.com">email</a>
+        </div>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 if (window.location.hash) {
@@ -37,9 +41,11 @@
     </header>
 
     <main>
-        <!-- Showreel -->
-        <section id="showreel" class="project">
-        <h2 class="centered"><em>SHOWREEL</em></h2>
+        <section class="intro centered">
+            <h2>Welcome!</h2>
+            <p>Thank you for visiting! Check out my showreel and the links to some of my work below.</p>
+            
+            <!-- Optional: Showreel Embed -->
             <div class="video-container">
                 <video controls poster="splashscreen.png">
                     <source src="https://raw.githubusercontent.com/Phhoto/portfolio/main/showreel1%20compressed.mp4" type="video/mp4">
@@ -48,263 +54,74 @@
             </div>
         </section>
 
-        <!-- Project 5 -->
-        <section id="smoketrail" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Smoketrail</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/smoketrail" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
-                </span>
+        <section class="projects-grid">
+            <a href="allprojects.html" class="project-card-link">
+            <div class="project-card">
+                <h3>VIEW ALL</h3>
+                <p>See the full list of things I've worked on!</p>
             </div>
-            <p>
-                Puzzle game which challenges players to guide particles into designated areas to progress, developed in Unity over 72 hours for <a href="https://itch.io/jam/mini-jam-179-energy" target="_blank" class="play-link">Mini Jam 179</a>.
-            </p>
-            <div class="project-images">
-                <img src="stgif1.gif" alt="Smoketrail Level 3">
-                <img src="stgif2.gif" alt="Smoketrail Level 5">
+            </a>
+            <a href="bigprojects.html" class="project-card-link">
+            <div class="project-card">
+                <h3>PROJECTS</h3>
+                <p>Longer games and more involved programming tasks.</p>
             </div>
-            <p>
-                The theme for this Mini Jam was "Creation Through Destruction." My initial idea involved objects burning and emitting different smoke trails, which players would sculpt into specific shapes by strategically placing wind currents. As it turned out, a significant portion of development time was spent learning Unity’s <em>ParticleSystem</em>, and consequently <em>ParticleSystemForceField</em> -although this was far more valuable for expanding my skill set than just implementing familiar mechanics. Due to this, and drawing from past jam experience, I made a conscious effort to scale back the project’s scope to get a playable and polished result that demonstrated the underlying concept well.
-            </p>
-            <div class="project-images">
-                <img src="stgif3.gif" alt="Smoketrail Level 7">
-                <img src="stgif4.gif" alt="Smoketrail Level 8">
+            </a>
+            <a href="smallprojects.html" class="project-card-link">
+            <div class="project-card">
+                <h3>MINIGAMES</h3>
+                <p>Smaller projects made for game jams.</p>
             </div>
-            <p>The final game features eight levels, built around a single smoke trail controlled by one <em>ParticleSystemForceField</em> that follows the cursor. Players can adjust its gravity using mouse buttons to attract or repel particles as needed.</p>
-            <p>I was proud of the concept and pleased with how it came together. Playtesting proved invaluable -I repeatedly adjusted level order and difficulty to ensure new players could learn mechanics intuitively without solving puzzles by accident. This experience reinforced the importance of user experience, something I need to prioritize more from the outset in future projects. The game ultimately placed 18th for Concept out of 83 entries.</p>
-            
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/smoketrail" target="_blank">GAME PAGE</a> ]</em></p>
-            </div>
+            </a>
         </section>
 
-        <!-- Project 3 -->
-        <section id="autorhythm" class="project">
-            <div class="header-links">
-                <h2 class="game-title">AUTORHYTHM</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/autorhythm" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
-                </span>
+        <section class="projects-grid-images">
+            <a href="allprojects.html#autorhythm" class="image-card-link">
+            <div class="image-card">
+                <img src="ar2.png" alt="img">
+                <h3>AUTORHYTHM</h3>
             </div>
-            <p>
-                Made for my dissertation, AutoRhythm is a simple note-playing rhythm game in the style of DDR or Guitar Hero, in which the user can supply any song and have a level generated for it which they can then play.
-            </p>
-            <div class="project-images">
-                <img src="ar2.png" alt="AUTORHYTHM Screenshot">
-                <img src="ar4.png" alt="AUTORHYTHM Screenshot">
+            </a>
+            <a href="allprojects.html#smoketrail" class="image-card-link">
+            <div class="image-card">
+                <img src="stgif1.gif" alt="img">
+                <h3>Smoketrail</h3>
             </div>
-            <p>
-                The game itself was made in Unity, with accompanying Python code to deal with level generation. The user supplies an MP3 to the relevant folder, and a level can be generated, played, and saved for future use.
-            </p>
-            <ul>
-                <li>Options to control level generation (difficulty, style, etc.)</li>
-                <li>Easy rebinding with support for most HIDs and MIDI instruments</li>
-                <li>Customizable number of note streams (1-6 input buttons)</li>
-                <li>Level editor to tweak scores as needed</li>
-            </ul>
-            <div class="project-images">
-                <img src="ar1.png" alt="AUTORHYTHM Screenshot">
-                <img src="ar3.png" alt="AUTORHYTHM Screenshot">
+            </a>
+            <a href="allprojects.html#space-slider" class="image-card-link">
+            <div class="image-card">
+                <img src="ssgif1.gif" alt="img">
+                <h3>Space Slider</h3>
             </div>
-            <p>
-                This project exceeded my expectations and often generates well-structured levels for songs not featured in any existing rhythm games.</p><p>
-The generation process works by analysing the MP3 file for "note onsets" -the starting points of notes within the track. Each onset is assigned a strength value which indicates the likelihood of a significant change in the audio signal, which is useful as it also essentially indicates how ‘obvious’ the note is. After experimenting with both quantization and ignoring weak onsets to filter out irregular notes, I implemented a system that calculates the mean and standard deviation of onset strengths within a given window around each onset. The game can then selectively include onsets based on their relative strength, filtering out comparatively weak notes in favour of strong, obvious ones, while also allowing weak notes to exist in sections of the track with no strong onsets.
-</p><p>This was a huge and satisfying development milestone. Suddenly, levels felt like they properly matched the songs, with minimal unwanted or random notes. While the project absolutely prioritizes functionality over visuals, it’s a good proof of concept and can work well as a tool in conjunction with rhythm game emulators that accept user-made scores. Countless areas for improvement but I think it's a fun and promising prototype, and I’ve learned a lot from it.
-
-            </p>
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/autorhythm" target="_blank">GAME PAGE</a> ] --- [ <a href="https://raw.githubusercontent.com/Phhoto/portfolio/main/project%20report%20jake%20roberts.pdf" target="_blank">PROJECT WRITEUP</a> ]</em></p>
+            </a>
+            <a href="allprojects.html#press-play" class="image-card-link">
+            <div class="image-card">
+                <img src="ppgif1.gif" alt="img">
+                <h3>Press Play</h3>
             </div>
-        </section>
-
-        <!-- Project 8 -->
-        <section id="3d" class="project">
-            <div class="header-links">
-                <h2 class="game-title">3D Prototype</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/ossuery-demo?secret=bNR1gIjeqaIl7QnvMY2XdyrJgEQ" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
-                </span>
+            <a href="allprojects.html#dont-drop-alice" class="image-card-link">
+            <div class="image-card">
+                <img src="dda1.gif" alt="img">
+                <h3>Don't Drop Alice</h3>
             </div>
-            <p>
-                3D puzzle game prototype I made to improve my 3D skills.
-            </p>
-            <div class="project-images">
-                <img src="3dgif2.gif" alt="Gameplay Gif">
-                <img src="3dgif4.gif" alt="Gameplay GIF">
+            <a href="allprojects.html#3d" class="image-card-link">
+            <div class="image-card">
+                <img src="3dgif2.gif" alt="img">
+                <h3>3D Prototype</h3>
             </div>
-            <p>
-                The player walks around the environment and can fast forward or rewind time to solve puzzles. For example, forwarding time can cause locks to break and trees to grow, while rewinding can cause infrastructure to rebuild and electronics to become powered, all of which can be used to enable progression through the facility.
-            </p>
-            <div class="project-images">
-                <img src="3dgif1.gif" alt="Gameplay GIF">
-                <img src="3dgif3.gif" alt="Gameplay GIF">
+            <a href="allprojects.html#caption-quest" class="image-card-link">
+            <div class="image-card">
+                <img src="cq1.png" alt="img">
+                <h3>Caption Quest</h3>
             </div>
-            <p>This project is currently a sandbox that I use to test things out in Unity 3D (I've learnt plenty about particles, shaders, lighting, Blender/skinned mesh renderers and Cinemachine that my 2D work doesn't touch on), but I think the concept itself has legs and I'm excited to add more.</p>
-            
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/ossuery-demo?secret=bNR1gIjeqaIl7QnvMY2XdyrJgEQ" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/OssuaryScripts" target="_blank">CODE REPO</a> ]</em></p>
+            <a href="allprojects.html#carpetman-listener" class="image-card-link">
+            <div class="image-card">
+                <img src="cm1.png" alt="img">
+                <h3>Carpetman Listener</h3>
             </div>
-        </section>
-
-        <!-- Project 9 -->
-        <section id="spaceslider" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Space Slider</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/space-slider" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
-                </span>
-            </div>
-            <p>Platforming/puzzle game made for <a href="https://itch.io/jam/mini-jam-185-aliens" target="_blank" class="play-link">Mini Jam 185</a>. The limitation was 'limited space', and I limited the number of times the user could press space to move each level, requiring careful approaches to reach the exits.</p>
-            <div class="project-images">
-                <img src="ssgif1.gif" alt="Space Slider Level">
-                <img src="ssgif2.gif" alt="Space Slider Level">
-            </div>
-            <p>
-                For this project I made a conscious effort to design in an extensible way. I prefabbed everything - the player, the hazards, the walls, the main camera - in the hope that I could make functional and aesthetic changes later easily. This (maybe obviously!) really sped up development, and I could quickly make a new scene, throw together a level with existing and newly made prefabs, and then move onto the next. I also spent over an hour trying to draw a tileable striped wall texture in MS Paint.
-            </p>
-            <div class="project-images">
-                <img src="ssgif3.gif" alt="Space Slider Level">
-                <img src="ssgif4.gif" alt="Space Slider Level">
-            </div>
-            <p>I thought this project was cute and functional and had some well designed levels. It achieved 23rd overall out of 110 entries, getting 17th in Enjoyment.</p>
-            
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/space-slider" target="_blank">GAME PAGE</a> ]</em></p>
-            </div>
-        </section>
-
-        <!-- Project 7 -->
-        <section id="dont-drop-alice" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Don't Drop Alice</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://willowflame.itch.io/dont-drop-alice" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
-                </span>
-            </div>
-            <p>
-                Group project made in Unity for <a href="https://itch.io/jam/mini-jam-180-refresh" target="_blank" class="play-link">Mini Jam 180</a>, for which the theme was ‘Refresh’ and the limitation was ‘Falling Down’. Pop-ups constantly appear, and the player must refresh the tab with Alice in before she falls out of it.
-            </p>
-            <div class="project-images">
-                <img src="dda1.gif" alt="Don't Drop Alice Tab Spawning">
-                <img src="dda2.gif" alt="Don't Drop Alice Alice Spawning">
-            </div>
-            <p>For this project I had no hand in art or concept, so could focus entirely on clean implementation and QOL improvements. I had fun coming up with creative implementations, for example each of the ‘2D’ popup needed to have clickable components (Close button, refresh button, title bar) that could not be clicked through other popups in front of them. My solution was to implement the popups as very thin 3D objects that each spawn minutely closer to the 2D camera, with a 3D collider for the main body and slightly extruded colliders for the clickable parts. This meant I could just 3D raycast from the cursor position into the screen to accurately return whatever the user clicked, and closer popups would physically block anything behind them from being hit. It was a great lesson in bringing 3D concepts into a 2D game, and I’m glad Unity makes this so easy to do!
-            </p>
-            <p>Ranked 20th out of 86 entries.</p>
-            <div class="links">
-                <p><em>[ <a href="https://willowflame.itch.io/dont-drop-alice" target="_blank">GAME PAGE</a> ] --- [ <a href="https://jodethreart.itch.io/" target="_blank">JODIE'S ITCH PAGE</a> ] --- [ <a href="https://willowflame.itch.io" target="_blank">WILLOW'S ITCH PAGE</a> ] --- [ <a href="https://bleiph.itch.io/" target="_blank">SONYA'S ITCH PAGE</a> ]--- [ <a href="https://github.com/stitchw0/My-project" target="_blank">CODE REPO</a> ]</em></p>
-            </div>
-        </section>
-
-        <!-- Project 6 -->
-        <section id="press-play" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Press Play</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://willowflame.itch.io/press-play" target="_blank" class="play-link">PLAY IN BROWSER</a> ]</em>
-                </span>
-            </div>
-            <p>
-                A group project made in Unity for <a href="https://itch.io/jam/mini-jam-178-monsters" target="_blank" class="play-link">Mini Jam 178</a>. The limitation was ‘Everything Is Alive’, and after bouncing around ideas we went with one that had a small but expansible scope that would let us focus mainly on improving our team dev skills, as all of us had generally worked solo for jams in the past. Since ‘everything is alive’, we decided to make the game itself about trying to click a living ‘play’ button with a slippy, living cursor. Once that was implemented we went on to add ‘stop’ button enemies and constantly spawning play buttons to click.
-            </p>
-            <div class="project-images">
-                <img src="ppgif1.gif" alt="Press Play game start">
-                <img src="ppgif2.gif" alt="Press Play later gameplay">
-            </div>
-            <p>Divvying up work was easier than expected -it was nice seeing tasks flying across the Trello board and commits pouring in. Having team members more experienced with asset creation and visuals than me was also great, as I could focus almost entirely on scripting which left me lots of time for tweaking and improving game feel.</p>
-            <p>I implemented cursor controls, raycasting to detect successful clicks, and varied movement logic for buttons and enemies as described in the initial brief, and then was free to iterate on and add features to improve play and feel, such as:</p>
-            <ul>
-                <li>enemies bouncing off each other to mitigate clumping</li>
-                <li>a Rigidbody for the cursor which delta mouse movement adds force to rather than allowing player perfect control</li>
-                <li>DOTweening player control back to them after a collision</li>
-                <li>cosmetic tweening to scale and bounce the cursor to improve feel</li>
-            </ul>
-            <p>Ranked 21st out of 79 entries, coming 16th in the concept category.</p>
-            <div class="links">
-                <p><em>[ <a href="https://willowflame.itch.io/press-play" target="_blank">GAME PAGE</a> ] --- [ <a href="https://douuggggg.itch.io" target="_blank">DOUG'S ITCH PAGE</a> ] --- [ <a href="https://willowflame.itch.io" target="_blank">WILLOW'S ITCH PAGE</a> ] --- [ <a href="https://github.com/lasdoug/minijam2025" target="_blank">CODE REPO</a> ]</em></p>
-            </div>
-        </section>
-
-        <!-- Project 1 -->
-        <section id="caption-quest" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Caption Quest</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/caption-quest-uob-gamejam?secret=OTS36HC17DHk2tz3StgKLIdDF8Y" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
-                </span>
-            </div>
-            <p>
-                A short top-down puzzle game made in 24 hours as a solo dev using PyGame for the University of Bristol GameJam.
-            </p>
-            <div class="project-images">
-                <img src="cq1.png" alt="Caption Quest Room 3">
-                <img src="cq2.png" alt="Caption Quest Room 5">
-            </div>
-            <p>
-                The theme was 'It's not a bug, it's a feature!', and my 'bug' was the player character not having their movement restricted when talking to NPCs. This, for example, lets them walk over textboxes, grab keys out of them, and start multiple conversations at once. It was awarded the prize for 'Most Innovative Game' out of around 30 teams of 1-6 people.
-            </p>
-            
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/caption-quest-uob-gamejam?secret=OTS36HC17DHk2tz3StgKLIdDF8Y" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/GameJam-CaptionQuest" target="_blank">CODE REPO</a> ]</em></p>
-            </div>
-        </section>
-
-
-        <!-- Project 2 -->
-        <section id="carpetman-listener" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Carpetman Listener</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/carpetman-listener" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
-                </span>
-            </div>
-            <p>
-                Building off of Caption Quest, this is a longer puzzle game following the same concept, made in PyGame and submitted to the Mental Health Game Dev Champions Jam on itch.io.
-            </p>
-            <div class="project-images">
-                <img src="cm1.png" alt="Carpetman Listener Screenshot">
-                <img src="cm2.png" alt="Carpetman Listener Screenshot">
-            </div>
-            <p>
-                I designed 24 levels with some new features, such as textboxes with non-walkable borders, beam-activated switches, and eventually the ability to talk yourself. Many levels focus on playing around with the core mechanics in different ways.
-            </p>
-            <div class="project-images">
-                <img src="cm3.png" alt="Carpetman Listener Screenshot">
-                <img src="cm4.png" alt="Carpetman Listener Screenshot">
-            </div>
-            <p>
-                I'm proud of the work I put into this game, it was nice to build something from the ground up, refine my level design skills and have time to write significantly cleaner code than in Caption Quest. The design approach focused on pushing core concepts to their limits, and ultimately this led to a few quite confusing yet similar puzzles. I’ve learned that balancing complexity with accessibility is key to maintaining engagement. In hindsight, taking the design approach the other way with a faster introduction of new mechanics and simpler puzzles—something Caption Quest did well—could have enhanced the overall player experience. This project has been a great lesson in striking that balance, and I’m excited to apply these insights to future designs.
-            </p>
-            <div class="links">
-                <p><em>[ <a href="https://phhoto.itch.io/carpetman-listener" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/Carpetman-Listener" target="_blank">CODE REPO</a> ]</em></p>
-            </div>
-        </section>
-
-        
-
-        <!-- Project 4 -->
-        <section id="wizard-pool" class="project">
-            <div class="header-links">
-                <h2 class="game-title">Wizard Pool</h2>
-                <span class="game-link">
-                    <em>[ <a href="https://phhoto.itch.io/wizard-pool-demo?secret=sy0i5MQJWKX3FcEvEB2fVVK0po" target="_blank" class="play-link">DOWNLOAD HERE</a> ]</em>
-                </span>
-            </div>
-            <p>
-                A 2-player pool simulator made in Processing (a Java-style IDE + graphics library). Each turn, players can select a spell to cast, such as "moving pockets," "fog cloud," or "create portals."
-            </p>
-            <div class="project-images">
-                <img src="wp1.png" alt="Wizard Pool Screenshot">
-                <img src="wp2.png" alt="Wizard Pool Screenshot">
-            </div>
-            <p>
-                A silly little project I occasionally update with new spells. It's fun to have somewhere to throw ridiculous, unbalanced ideas and to watch your friends scream at each other over them :)
-            </p>
-        <div class="links">
-            <p><em>[ <a href="https://phhoto.itch.io/wizard-pool-demo?secret=sy0i5MQJWKX3FcEvEB2fVVK0po" target="_blank">GAME PAGE</a> ] --- [ <a href="https://github.com/Phhoto/Wizard-Pool" target="_blank">CODE REPO</a> ]</em></p>
-        </div>
         </section>
     </main>
+
 
     <footer>
         <p>Jake Roberts</p>
